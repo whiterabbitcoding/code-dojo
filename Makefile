@@ -3,7 +3,7 @@
 
 .PHONY: test
 test:
-	python3 -m pytest -vv -s --ignore=tests/api_tests
+	python3 -m pytest -vv -s
 
 .PHONY: cyclo
 cyclo:
@@ -22,7 +22,7 @@ format-check:
 coverage:
 	rm -f coverage.svg;
 	coverage erase;
-	coverage run --source='.' -m pytest -vv --disable-pytest-warnings -o log_cli=true -s --ignore=tests/api_tests;
+	coverage run --source='.' -m pytest -vv --disable-pytest-warnings -o log_cli=true -s;
 	coverage report;
 	coverage-badge -o coverage.svg;
 
@@ -32,22 +32,17 @@ all: venv-init deps
 venv-init:
 	if [ ! -e ".venv/bin/activate" ] ; then PYTHONPATH=.venv ; python3 -m venv .venv ; fi
 deps:
-	 . .venv/bin/activate && pip install --upgrade pip fi
-	 . .venv/bin/activate && pre-commit install
-freeze_dev:
-	. .venv/bin/activate && poetry export -f requirements.txt --output requirements-dev.txt \
-	--with=dev \
-	--without-hashes \
-	--without-urls
-freeze_prod:
-	. .venv/bin/activate && poetry export -f requirements.txt --output requirements.txt \
-	--only=main \
-	--without-hashes \
-	--without-urls
+	. .venv/bin/activate && pip install --upgrade pip
+	. .venv/bin/activate && pip install -r requirements.txt
+	. .venv/bin/activate && pre-commit install
+
 .PHONY: freeze
-freeze: freeze_prod
-rm-env:
+freeze:
+	pip freeze > requirements.txt
+rm-venv:
 	rm -rf .venv
-venv-recreate: rm-env venv-init deps
+venv-recreate: rm-venv venv-init deps
 env:
-	. .venv/bin/activate.fish
+	( \
+       source .venv/bin/activate; \
+    )
