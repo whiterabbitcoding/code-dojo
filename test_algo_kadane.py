@@ -1,7 +1,9 @@
 from sys import maxsize
 
 
-def getMaxProfit(a, size):
+def get_max_profit(a, size):
+    print("a")
+    print("a")
     print("a")
     print(a)
     print("size")
@@ -34,11 +36,4 @@ def getMaxProfit(a, size):
 
 
 def get_profit():
-
-
-print(
-    getMaxProfit(
-        [4, 3, -2, 9, -4, 2, 7],
-        6,
-    )
-)
+    pass
