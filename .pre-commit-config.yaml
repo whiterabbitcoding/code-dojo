@@ -13,10 +13,7 @@ repos:
     rev: 3.9.2
     hooks:
       - id: flake8
-        # language_version: python3
-        # files: ^(*.py)
-        # # exclude: ^(venv|config(.*).py)
-        args: [-v]
+        args: ["-v", "--config=setup.cfg"]
         additional_dependencies:
           - "flake8-blind-except>=0.1.0,<1.0.0"
           - "flake8-builtins>=1.4.0,<2.0.0"
