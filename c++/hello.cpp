@@ -2,6 +2,14 @@
 #include <string>
 using namespace std;
 
+
+/*
+Commands:
+    g++ *file*
+    >>
+    ./a.out
+*/
+
 // This a comment
 /* This is a multi
     line comment*/
