@@ -204,3 +204,26 @@ The Python Global Interpreter Lock or GIL, in simple words, is a mutex (or a loc
 Read more and add info about multi processing
 
 What database to use and when?
+
+
+
+Questions for oxford nanpore
+
+he said in office once a fortnight maybe, this accurate?
+
+what is the domain knowledge needed for this role? with it being dna , is that kind of understanding going to be significant
+
+how much data do you guys store? and do you have any interesting solutions for its storage
+
+whats your role?
+
+where do you see me being in 2-3 years? any leadership opportunities
+
+Do you have leadership experience?
+
+certino was a flat team structure, in that we were all mid level + engineers with equal input, but different individuals would lead different projects. So I would leave the build on a couple of areas, which would see me managing 2-3 engineers on a build for a 2 couple of months. It was a nice taste of leadership in a technical role, when it comes to soft skills i think excel too - organisation and productivity are high using a couple of different tools and from managing teams in hospitality, I know how to be approachable and diplomatic. Furthmore I'm really bought into my team members and growing them, which is a management style I like. Making time for learning etc
+
+what do you know about oxford nanopore?
+
+Oxford Nanopore’s sequencing platform is the only technology that offers real-time analysis, in fully scalable formats from pocket to population scale, that can analyse native DNA or RNA and sequence any length of fragment to achieve short to ultra-long read lengths. Our goal is to enable the analysis of any living thing, by anyone, anywhere!
+We are looking for a talented individual to join the Manufacturing Tracking team as a Senior Software Developer. You'll be responsible for developing new software and maintaining existing applications used for the collection, management and integration of manufacturing data across the company.
