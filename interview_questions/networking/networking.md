@@ -3,7 +3,7 @@ What is the OSI Model?
 The open systems interconnection (OSI) model is made up of serveral layers that standardise the functions of telecommunication or computing system. There are 7 layers total
 
 Phyical layer
-Deals witht the connection bwtween devices, cables or wireless signals. Responsible for transmittting raw data
+Deals with the connection bwtween devices, cables or wireless signals. Responsible for transmittting raw data
 
 Data Link Layer
 
@@ -11,7 +11,7 @@ creates reliable link between 2 devices on a network. Ensures reliables data tra
 
 Network Layer
 
-Routes packets of data between different devices on a network, regardless of phyical connection medium. Determines optimal path to transfer and assigns logical addresses (IP) to devies on the network
+Routes packets of data between different devices on a network, regardless of phyical connection medium. Determines optimal path to transfer and assigns logical addresses (IP) to devices on the network
 
 Transport Layer
 
@@ -38,7 +38,7 @@ HTTPS - plus secure is a secure version of HTTP that encrypts between the client
 
 What is Transmission Control Protocol ( TCP )?
 
-TCP is a reliable connection-oriented protocol that ensures data is delivered correctly between applications over a network. It ensures accurate and complete data delive. Segments and reorders packets and verifies them
+TCP is a reliable connection-oriented protocol that ensures data is delivered correctly between applications over a network. It ensures accurate and complete data is delivered. Segments and reorders packets and verifies them.
 
 What is internet protocol (IP)?
 
