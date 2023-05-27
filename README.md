@@ -42,7 +42,7 @@ Run tests:
 make test
 ```
 
-### Pre-commit hooks
+### Pre-commit Hooks
 
 This service uses pre-commit hooks to apply `black`, `flake8`, and `isort`
 formatting.
