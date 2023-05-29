@@ -5,7 +5,6 @@ fn looper(){
         i -= 1
     }
 }
-j
 fn loop_vector() {
 }
 
