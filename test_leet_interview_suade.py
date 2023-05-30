@@ -1,24 +1,34 @@
-# def encrypt_text(plaintext, n):
-#     dict_from_input = ""
-#     # iterate over the given text
-#     for i in range(len(plaintext)):
-#         ch = plaintext[i]
+from typing import List
 
-#         if ch == " ":
-#             dict_from_input += " "
-#         elif ch.isupper():
-#             ans += chr((ord(ch) + n - 65) % 26 + 65)
-#         else:
-#             ans += chr((ord(ch) + n - 97) % 26 + 97)
+# What is ord - ord returns the integer that represents the unicode character
+# What is chr - returns the character as string from an integer
 
-#     return dict_from_input
+
+def encrypt_text(plaintext, n):
+    dict_from_input = ""
+    # iterate over the given text
+    for i in range(len(plaintext)):
+        ch = plaintext[i]
+
+        if ch == " ":
+            dict_from_input += " "
+        elif ch.isupper():
+            #   we use modulo operator for times when shift take letters beyond alphabet -
+            #   eg z , shift = 2, so char is 2 not 28 so we can get b as output char
+            dict_from_input += chr((ord(ch) + n - 65) % 26 + 65)
+            print("here")
+            print(chr((ord(ch) + n - 65) % 26 + 65))
+        else:
+            dict_from_input += chr((ord(ch) + n - 97) % 26 + 97)
+            print("here2")
+            print((ord(ch) + n - 97))
+            print((ord(ch) + n - 97) % 26)
+
+    return dict_from_input
 
 
 # print(encrypt_text("stuff", 1))
-
-
-from typing import List
-
+print(encrypt_text("abc", 1))
 
 example = ["X:-1", "Y:1", "X:-4", "B:3", "X:5"]
 
